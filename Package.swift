@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftUI-AdaptiveGrid",
+    name: "AdaptiveGrid",
     platforms: [
         .macOS(.v11),
         .watchOS(.v7),
