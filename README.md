@@ -15,6 +15,8 @@ Otherwise, go ahead and use SwiftUI’s built in `Grid`.
 
 ## Getting Started
 
+It’s similar to SwiftUI’s native `Grid`, so you can quickly gettting started.
+
 ```swift
 AdaptiveGrid {
     GridRowContainer {
@@ -39,7 +41,7 @@ AdaptiveGrid {
 
 ![](Images/hello-world.png)
 
-You can specify both horizontal and vertical spacing just like how you use the SwiftUI native `Grid` view.
+You can specify both horizontal and vertical spacing just like how you use the SwiftUI’s native `Grid` view.
 
 ```swift
 AdaptiveGrid(horizontalSpacing: 10, verticalSpacing: 10) {
