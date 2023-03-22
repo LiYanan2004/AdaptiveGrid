@@ -12,17 +12,11 @@ struct GridView: View {
     var body: some View {
         AdaptiveGrid(horizontalSpacing: 10, verticalSpacing: 10) {
             GridRowContainer {
-                GridCellContainer {
-                    Text("Cell")
-                }
-                GridCellContainer(alignment: .leading) {
-                    Text("Leading")
-                }
+                Text("Cell")
+                Text("Leading")
             }
             GridRowContainer {
-                GridCellContainer {
-                    Text("Cell")
-                }
+                Text("Cell")
             }
         }
     }

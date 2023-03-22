@@ -69,6 +69,9 @@ extension GridRowContainer {
     static public func buildArray(_ components: [GridRowContainer]) -> GridRowContainer {
         GridRowContainer(cells: components.flatMap { $0.cells })
     }
+    static public func buildExpression(_ expression: some View) -> GridRowContainer {
+        GridRowContainer(cells: [GridCellContainer(expression)])
+    }
 }
 
 // MARK: - Grid Cell
