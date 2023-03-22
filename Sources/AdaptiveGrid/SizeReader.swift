@@ -56,7 +56,7 @@ fileprivate struct _SizeReaderModifier: ViewModifier {
             .overlay {
                 GeometryReader { geometryProxy in
                     Color.clear
-                        .task(id: geometryProxy.size) {
+                        ._task(id: geometryProxy.size) {
                             size = geometryProxy.size
                         }
                 }
@@ -72,7 +72,7 @@ fileprivate struct _HeightReaderModifier: ViewModifier {
             .overlay {
                 GeometryReader { geometryProxy in
                     Color.clear
-                        .task(id: geometryProxy.size) {
+                        ._task(id: geometryProxy.size) {
                             height = geometryProxy.size.height
                         }
                 }
@@ -88,7 +88,7 @@ fileprivate struct _WidthReaderModifier: ViewModifier {
             .overlay {
                 GeometryReader { geometryProxy in
                     Color.clear
-                        .task(id: geometryProxy.size) {
+                        ._task(id: geometryProxy.size) {
                             width = geometryProxy.size.width
                         }
                 }

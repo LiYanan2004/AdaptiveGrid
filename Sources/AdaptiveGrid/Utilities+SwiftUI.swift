@@ -10,7 +10,7 @@ extension View {
     ///   - priority: The task priority to use when creating the asynchronous task. The default priority is `userInitiated`.
     ///   - action: A closure that SwiftUI calls as an asynchronous task before the view appears. SwiftUI can automatically cancel the task after the view disappears before the action completes. If the id value changes, SwiftUI cancels and restarts the task.
     /// - Returns: A view that runs the specified action asynchronously before the view appears, or restarts the task with the id value changes.
-    func task<E: Equatable>(id: E, priority: TaskPriority = .userInitiated, _ action: @escaping () async -> Void) -> some View {
+    func _task<E: Equatable>(id: E, priority: TaskPriority = .userInitiated, _ action: @escaping () async -> Void) -> some View {
         modifier(_TaskModifier(id: id, priority: priority, action: action))
     }
 }
